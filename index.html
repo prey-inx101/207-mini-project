@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>PNCA101</title>
+  <link rel="icon" type="image/png" href="images/P.png"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/> <!--access to ready-made icons-->
+  <link rel="stylesheet" href="style.css"/>
+</head>
+
+
+
+<body>
+<!-- ═══ BANNER ═══ -->
+<header id="banner" role="banner">
+  <div class="banner-corner tl">✦</div>
+  <div class="banner-corner tr">✦</div>
+  <div class="banner-corner bl">✦</div>
+  <div class="banner-corner br">✦</div>
+  <p class="banner-pre">✦ &nbsp; A Glimpse Into My Whimsical Chronicles of Code and Ink &nbsp; ✦</p>
+  <h1 class="banner-name"><span>P</span>recious <span>N</span>olbert <span>C</span>. <span>A</span>marga</h1>
+  <div class="divider">— ✦ —</div>
+  <p class="banner-title">CS Student &nbsp;·&nbsp; Muted Scribbler &nbsp;·&nbsp; Coffee Addict</p>
+</header>
+
+<!-- ═══ NAV ═══ -->
+<nav id="main-nav" role="navigation" aria-label="Main navigation">
+  <div class="nav-inner">
+    <div class="nav-item active" data-section="home">
+      <span class="nav-link">Home</span>
+      <div class="nav-dropdown"><h4>Welcome</h4><p>Greetings, tech stack, fun facts &amp; what I'm up to currently.</p></div>
+    </div>
+    <div class="nav-item" data-section="about">
+      <span class="nav-link">About</span>
+      <div class="nav-dropdown"><h4>About Me</h4><p>My story, academics, work history, and the values that guide me.</p></div>
+    </div>
+    <div class="nav-item" data-section="hobbies">
+      <span class="nav-link">Hobbies</span>
+      <div class="nav-dropdown"><h4>Hobbies &amp; Interests</h4><p>Reading, gaming, music, anime — things that colour my world.</p></div>
+    </div>
+    <div class="nav-item" data-section="contact">
+      <span class="nav-link">Contact</span>
+      <div class="nav-dropdown"><h4>Find Me</h4><p>My contact info and social links — let us connect.</p></div>
+    </div>
+  </div>
+</nav>
+
+<main>
+
+<!-- ═══ HOME ═══ -->
+<section id="home" class="section active" aria-label="Home">
+  <div class="ticker-wrap">
+    <div class="ticker-track">
+      <span>✦ Studying | Working | Eating | Sleeping | Repeat.</span>
+      <span>✦ Currently reading: Bridgerton: To Sir Philip, With Love.</span>
+      <span>✦ Learning to play Ukelele.</span>
+      <span>✦ Studying | Working | Eating | Sleeping | Repeat.</span>
+      <span>✦ Currently reading: Bridgerton: To Sir Philip, With Love.</span>
+      <span>✦ Learning to play Ukelele.</span>
+    </div>
+  </div>
+
+  <div class="home-grid">
+
+    <div class="home-greeting">
+      <div class="hicon"><i class="fa-solid fa-feather-pointed"></i></div>
+      <h3>Hello World 👋</h3>
+      <p>
+        I'm Precious, a DCS student with a background in IT returning to the field with a renewed sense of purpose. 
+        This site is a small window into my background, interests, and the things that keep me going.        
+      </p>
+    </div>
+
+    
+    <div class="home-tech">
+      <div class="hicon"><i class="fa-solid fa-code"></i></div>
+      <h3>Tech Stack</h3>
+      <div class="tech-pills">
+        <span class="tech-pill">HTML</span>
+        <span class="tech-pill">CSS</span>
+        <span class="tech-pill">JavaScript</span>
+        <span class="tech-pill">PHP</span>
+        <span class="tech-pill">MySQL</span>
+        <span class="tech-pill">Python</span>
+        <span class="tech-pill">SQLite</span>
+      </div>
+    </div>
+
+    <div class="home-funfact">
+      <div class="hicon"><i class="fa-solid fa-star"></i></div>
+      <h3>Fun Facts</h3>
+      <p>Click below to discover something delightful about me — one revelation at a time.</p>
+      <button id="fun-fact-btn" onclick="showFunFact()">✦ Reveal a Fun Fact</button>
+      <div id="fun-fact-display"></div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- ═══ ABOUT ═══ -->
+<section id="about" class="section" aria-label="About me">
+  <div class="section-header">
+    <h2>About <span>Me</span></h2>
+    <div class="divider">— ✦ —</div>
+  </div>
+
+  <div class="about-layout">
+    <aside>
+
+      <div class="profile-circle">
+        <div class="profile-slide active">
+          <img src="images/q7.png" alt="me1"/>
+        </div>
+        <div class="profile-slide">
+          <img src="images/q5.jpg" alt="me2"/>
+        </div>
+        <div class="profile-slide">
+          <img src="images/q6.jpeg" alt="me3"/>
+        </div>
+      </div>
+
+      
+      <div class="profile-info">
+        <h3>Precious Nolbert Amarga</h3>
+        <p class="verse">Favorite Verse:<br/><em>Psalm 46:10</em></p>
+      </div>
+
+      
+      <ul class="about-vmenu" id="about-vmenu">
+        <li class="active" data-panel="story">My Background</li>
+        <li data-panel="academic">Academic</li>
+        <li data-panel="work">Work History</li>
+        <li data-panel="values">What I Value</li>
+      </ul>
+
+    </aside>
+
+    <div class="about-right">
+
+      <!-- ── MY BACKGROUND ── -->
+      <div class="about-panel active" id="panel-story">
+        <h3>My Background</h3>
+
+        <div class="story-slideshow">
+          <div class="story-slide active">
+            <img src="images/q1.jpg" alt="me"/>
+          </div>
+          <div class="story-slide">
+            <img src="images/x1.jpg" alt="pic"/>
+          </div>
+          <div class="story-slide">
+            <img src="images/x12.jpg" alt="pic"/>
+          </div>
+          <div class="story-slide">
+            <img src="images/z22.jpg" alt="pic"/>
+          </div>
+        </div>
+       
+
+
+        <div class="slide-controls">
+          <button class="slide-btn" onclick="storyPrev()">&#8592; Prev</button>
+          <button class="slide-btn" onclick="storyNext()">Next &#8594;</button>
+        </div>
+
+        <p><br/>
+          My background is a blend of discipline and curiosity. I am the child of a retired Army (MSG) who served as a combat radio operator.
+          My mother, who passed away in 2024, was a high school History Teacher who transitioned into education after a career in the financial sector.
+          Their diverse professional paths provided me with a foundation built
+          on clear communication and a deep respect for both analytical and narrative learning.
+          <br/><br/>
+          Within my family, I grew up as the only daughter and the middle child.
+          Being situated between two brothers, one an Electrical Communications Engineer,
+          and another a Resident Chef - College Instructor, exposed me to different perspectives,
+          between technical logic, and creative work.
+        </p>
+      </div><!-- /panel-story -->
+
+      
+
+      <!-- ── ACADEMIC ── -->
+      <div class="about-panel" id="panel-academic">
+        <h3>Academic Background</h3>
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="year">2024 – Present</div>
+            <h4>University of the Philippines – Open University (UPOU)</h4>
+            <p>Diploma in Computer Science (DCS)</p>
+          </div>
+
+          <div class="timeline-item">
+            <div class="year">2015</div>
+            <h4>Caraga State University (CSU)</h4>
+            <p>Bachelor of Science in Information Technology</p>
+          </div>
+
+        </div>
+      </div><!-- /panel-academic -->
+
+
+      
+      <!-- ── WORK HISTORY ── -->
+      <div class="about-panel" id="panel-work">
+        <h3>Work History</h3>
+
+        <div class="work-tabs">
+          <button class="work-tab active" onclick="showWork('work1',this)">2022 – Present</button>
+          <button class="work-tab" onclick="showWork('work2',this)">2018 – 2021</button>
+          <button class="work-tab" onclick="showWork('work3',this)">2017 – 2018</button>
+          <button class="work-tab" onclick="showWork('work4',this)">2015 – 2017</button>
+        </div>
+
+        <div class="work-entry active" id="work1">
+          <h4>Content Writer</h4>
+          <div class="work-meta">An Evaluation and Expert Opinion US-Based Company · 2022 – Present</div>
+          <p>
+            The responsibilities include reviewing and verifying documents submitted by clients,
+            requesting additional documentation when necessary to complete the evaluation,
+            conducting relevant research and assisting in the preparation of draft reports as required,
+            maintaining strict confidentiality of client information, and performing other assigned tasks as needed.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-tag">Online Research</span>
+            <span class="skill-tag">Content Writing</span>
+            <span class="skill-tag">Remote Work</span>
+          </div>
+        </div>
+
+        <div class="work-entry" id="work2">
+          <h4>Operations Associate</h4>
+          <div class="work-meta">HSBC Electronic Data Processing Philippines, Inc. · 2018 – 2021</div>
+          <p>
+            The role involves responding to customer inquiries through live chat or phone, taking ownership
+            and initiative to deliver high quality service by resolving concerns at first contact whenever possible,
+            and ensuring that all company records, including customer information,
+            are kept confidential and secure in accordance with UK account requirements.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-tag">Customer Service</span>
+            <span class="skill-tag">Technical Support</span>
+            <span class="skill-tag">Chat Support</span>
+          </div>
+        </div>
+
+        <div class="work-entry" id="work3">
+          <h4>Senior High School Teacher</h4>
+          <div class="work-meta">Saint Joseph Institute of Technology · 2017 – 2018</div>
+          <p>
+            The responsibilities include discussing concepts related to Empowerment Technologies,
+            preparing instructional materials for presentations, grading assessments and conducting progress reports,
+            and maintaining accurate records of student activities in compliance with applicable laws and school policies.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-tag">Teaching</span>
+            <span class="skill-tag">Class Management</span>
+          </div>
+        </div>
+
+        <div class="work-entry" id="work4">
+          <h4>Customer Service Representative – Account Maintenance, Billing, and Renewal Department</h4>
+          <div class="work-meta">Wipro BPO Philippines Ltd. Inc. · 2015 – 2017</div>
+          <p>
+            The role involves handling inbound and outbound calls in accordance with established quality standards,
+            policies, and procedures, addressing customer inquiries, concerns, and complaints with the goal of achieving
+            first call resolution, and ensuring that all company information, including customer details,
+            is maintained confidential and secure.
+          </p>
+          <div class="skill-tags">
+            <span class="skill-tag">Tech Support</span>
+            <span class="skill-tag">Customer Service</span>
+          </div>
+        </div>
+
+      </div><!-- /panel-work -->
+
+      
+
+      <!-- ── WHAT I VALUE ── -->
+      <div class="about-panel" id="panel-values">
+        <h3>What I Value</h3>
+        <div class="values-grid">
+
+          <div class="value-card">
+            <div class="icon">❤️</div>
+            <h4>Faith</h4>
+            <p>Rooted in faith, I face both joy and hardship with gratitude, and acceptance.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="icon">🐾</div>
+            <h4>Compassion</h4>
+            <p>I show care and patience toward pets, giving them kindness, attention, and understanding even when they need extra time, effort, or gentle support.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="icon">💬</div>
+            <h4>Sincerity</h4>
+            <p>I listen carefully and give honest advice, believing that being direct helps others improve.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="icon">🌿</div>
+            <h4>Inner Peace</h4>
+            <p>By valuing personal space and quiet moments, I maintain balance and choose calm over unnecessary conflict.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="icon">🛡️</div>
+            <h4>Boundaries</h4>
+            <p>I set clear boundaries to protect my time, energy, and peace.</p>
+          </div>
+
+          <div class="value-card">
+            <div class="icon">✨</div>
+            <h4>Respect</h4>
+            <p>I handle borrowed belongings with care and responsibility, as I believe the same consideration should always be returned.</p>
+          </div>
+
+        </div>
+      </div><!-- /panel-values -->
+
+    </div><!-- .about-right -->
+  </div><!-- .about-layout -->
+</section>
+
+
+
+
+<!-- ═══ HOBBIES ═══ -->
+<section id="hobbies" class="section" aria-label="Hobbies and interests">
+  <div class="section-header">
+    <h2>Hobbies &amp; <span>Interests</span></h2>
+    <div class="divider">— ✦ —</div>
+  </div>
+
+  <div class="hobbies-detail-layout">
+    <ul class="hobbies-vmenu" id="hobbies-vmenu">
+      <li class="active" data-hobby="reading">📚 Reading</li>
+      <li data-hobby="collecting">🧸 Collecting</li>
+      <li data-hobby="gaming">🎮 Gaming</li>
+      <li data-hobby="anime">🍿 Watching Anime &amp; Series &amp; Movies</li>
+      <li data-hobby="music">🎵 Music &amp; Interests</li>
+    </ul>
+
+    <div class="hobbies-right">
+
+      <!-- ── READING ── -->
+      <div class="hobby-panel active" id="hobby-reading">
+        <h3>📚 Reading</h3>
+        <div class="reading-grid">
+
+          <div class="reading-box">
+            <h4>Romance</h4>
+            <p>Bridgerton: To Sir Philip, With Love.</p>
+            <p>A Midsummer Night's Dream</p>
+            <p>Pride and Prejudice</p> 
+            
+            <h4>Magical Realism</h4>
+            <p>Kafka on the Shore </p>
+
+          </div>
+
+          <div class="reading-box">
+            <h4>Self-Help Book/Memoir/Personal Essay</h4>
+            <p>God Why Does It Hurt?</p> 
+            <p>Atomic Habits</p>
+            <p>Even as an Adult, I Cry Sometimes</p>
+            <p>I'm not Lazy. I'm On Energy Saving Mode.</p>
+            <p>1CM Origin</p>
+          </div>
+
+          <div class="reading-box">
+            <h4>Fantasy</h4>
+            <p>Harry Potter Series</p>
+            <p>The Midnight Library</p>
+          </div>
+
+          <div class="reading-box">
+            <h4>Manga/Anime</h4>
+            <p>Spy x Family</p>
+            <p>The Apothecary Diaries</p>
+          </div>
+
+        </div>
+      </div><!-- /hobby-reading -->
+
+
+      <!-- ── COLLECTING ── -->
+      <div class="hobby-panel" id="hobby-collecting">
+        <h3>🧸 Collecting</h3>
+        <div class="collecting-grid">
+
+          <div class="collect-box">
+            <h4>BTS Albums</h4>
+            <p>Back in December 2014, I was just graduating and felt completely new to everything. I kinda felt helpless and unsure what to do next.
+               That was when I started following BTS because I resonated with how they began at the very bottom.
+              Even today, their persistence inspires me to keep working hard as I try to get myself back on track.</p>
+          </div>
+
+          <div class="collect-box">
+            <h4>🎀 Hello Kitty</h4>
+            <p>My love for Hello Kitty also provides me a sense of comfort that started with a gift from my mom's coworker.
+              I have always preferred her simple and cute design over any kind of dolls or any human-like toys since those actually kinda freak me out a bit.</p>
+          </div>
+
+          <div class="collect-box">
+            <h4>☕ Friends × McDo</h4>
+            <p>My Friends x McDo collection has been a way to divert my attention after my mom passed away in 2024.
+              Watching the entire series became a way to cope with that loss and find some peace.
+              Chandler Bing is my favourite character because his humor helped me through some of my darkest moments.</p>
+          </div>
+
+          <div class="collect-box">
+            <h4>📚 Books</h4>
+            <p>I have a growing collection of books that I love to surround myself with, and honestly I haven't even started reading half of them yet.
+              I am the type of person who buys a book the moment it catches my eye and like it.
+              There is a quiet satisfaction just owning them and knowing they are there is enough for me right now.</p>
+          </div>
+
+          <div class="collect-box">
+            <h4>🧱 Mini Blocks</h4>
+            <p>I have a collection of mini building blocks that provides a focused sense of accomplishment.
+              While I have several sets already completed and displayed, there are still a few left waiting to be assembled.</p>
+          </div>
+
+        </div>
+      </div><!-- /hobby-collecting -->
+
+
+      <!-- ── GAMING ── -->
+      <div class="hobby-panel" id="hobby-gaming">
+        <h3>🎮 Gaming</h3>
+        <div class="gaming-grid">
+
+          <div class="gaming-box">
+            <h4>📱 Mobile Games</h4>
+            <p>Playing mobile games such as Mobile Legends: Bang Bang and Whiteout Survival provides quick, satisfying sessions
+              wherever I am, highlighting the convenience and enjoyment of mobile gaming.</p>
+          </div>
+
+          <div class="gaming-box">
+            <h4>🕹️ Nintendo Games</h4>
+            <p>I am currently playing cozy, creative, and endlessly charming games such as Hogwarts Legacy, Animal Crossing, and Two Point Campus.</p>
+          </div>
+
+        </div>
+      </div><!-- /hobby-gaming -->
+
+
+      <!-- ── ANIME & SERIES & MOVIES ── -->
+      <div class="hobby-panel" id="hobby-anime">
+        <h3>🍿 Watching Anime &amp; Series</h3>
+        <div class="anime-grid">
+
+          <div class="anime-box">
+            <h4>🌸 Favourite Anime</h4>
+            <ul>
+              <li>Death Note</li>
+              <li>The Disastrous Life of Saiki K.</li>
+              <li>Kamisama Kiss </li>
+              <li>Gakuen Alice</li>
+              <li>Spy X Family</li>
+              <li>The Apothecary Diaries</li>
+        
+            </ul>
+          </div>
+
+          <div class="anime-box">
+            <h4>🎬 Comfort Shows</h4>
+            <ul>
+              <li>Friends</li>
+              <li>Pepito Manaloto</li>
+              <li>Big Bang Theory</li>
+              <li>Young Sheldon</li>
+              <li>Fresh Off the Boat</li>
+            </ul>
+          </div>
+
+          <div class="anime-box">
+            <h4>🎬 Favourite Movies</h4>
+            <ul>
+              <li>The Count of Monte Cristo</li>
+              <li>The Classic</li>
+              <li>Crazy Little Thing Called Love (aka First Love)</li>
+            </ul>
+          </div>
+
+          <div class="anime-box">
+            <h4>▶️ Currently Watching</h4>
+            <ul>
+              <li>The Golden Scenery of Tomorrow</li>
+              <li>Gintama</li>
+
+            </ul>
+          </div>
+
+        </div>
+      </div><!-- /hobby-anime -->
+
+
+      <!-- ── MUSIC & INTERESTS ── -->
+      <div class="hobby-panel" id="hobby-music">
+        <h3>🎵 Music &amp; Interests</h3>
+        <div class="music-layout">
+
+          <ul class="music-submenu" id="music-submenu">
+            <li class="active" data-mpanel="music-vid">🎵 Music</li>
+            <li data-mpanel="music-interest">🎸 Interests</li>
+          </ul>
+
+          <div class="music-content">
+
+            <div class="music-panel active" id="music-vid">
+              <h4>My Favourite Music</h4>
+              <p>A selection of songs and performances close to my heart — press play and feel the mood.</p>
+              <div class="yt-placeholder" style="text-align:center;">
+                <div class="yt-icon"><i class="fa-brands fa-youtube"></i></div>
+                <p style="text-align:center;">Click below to listen to my favourite playlist</p>
+                <a href="https://www.youtube.com/watch?v=KgDOZQhRAXY&list=PL9W9W0GK7ZC6vuzjtvI0a7FRygjHHY7BS" target="_blank" rel="noopener noreferrer">
+                  <button class="playlist-btn" style="margin-top:10px;">▶ Open Playlist on YouTube</button>
+                </a>
+              </div>
+            </div><!-- /music-vid -->
+
+            <div class="music-panel" id="music-interest">
+              <h4>Learning Interests</h4>
+              <p>Beyond listening, I am on a journey of learning.</p>
+              <div class="interest-grid">
+
+                <div class="interest-box">
+                  <h4>🎸 Ukulele</h4>
+                  <p>Learning the ukulele — a cheerful little instrument that absolutely refuses to allow bad moods. Currently practising basic chords.</p>
+                </div>
+
+                <div class="interest-box">
+                  <h4>🎹 Kalimba</h4>
+                  <p>The kalimba's gentle, meditative tones are unlike anything else.</p>
+                </div>
+
+              </div>
+            </div><!-- /music-interest -->
+
+          </div><!-- /music-content -->
+        </div><!-- /music-layout -->
+      </div><!-- /hobby-music -->
+
+    </div><!-- .hobbies-right -->
+  </div><!-- .hobbies-detail-layout -->
+</section>
+
+
+<!-- ═══ CONTACT ═══ -->
+<section id="contact" class="section" aria-label="Contact information">
+  <div class="section-header">
+    <h2>Contact <span>Me</span></h2>
+    <div class="divider">— ✦ —</div>
+  </div>
+  <div class="contact-wrap">
+    <div class="business-card">
+      <div class="card-mono"><span>P</span></div>
+      <h2>Precious Nolbert Amarga</h2>
+
+      <div class="card-row">
+        <a href="mailto:precious.nolbert@gmail.com" target="_blank" rel="noopener noreferrer">
+          <i class="fa-solid fa-envelope"></i><span> precious.nolbert@gmail.com</span>
+        </a>
+      </div>
+
+      <div class="card-row"><i class="fa-solid fa-location-dot"></i><span>Philippines 🇵🇭</span></div>
+      <div class="card-row"><i class="fa-solid fa-circle-dot" style="color:var(--blue)"></i><span style="color:var(--blue)">Open to Opportunities</span></div>
+      <hr class="card-hr"/>
+
+      <p class="social-label">Find me on</p>
+      <div class="social-links">
+        <a class="social-link" href="https://github.com/prey-inx101" target="_blank" rel="noopener noreferrer" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a class="social-link" href="https://www.linkedin.com/in/precious-nolbert-amarga-pnca101/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a class="social-link" href="https://web.facebook.com/pnca101" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+        <a class="social-link" href="https://www.instagram.com/pnca101/" target="_blank" rel="noopener noreferrer" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+
+    </div>
+    <p class="contact-quote">"Whether it is a collaboration, a question, or simply a desire to say hello — my door is always open. Do not be a stranger."</p>
+  </div>
+</section>
+
+</main>
+
+
+  
+<footer>
+  <div class="divider" style="margin-bottom:10px;letter-spacing:6px;font-size:.72rem;">✦ &nbsp; ✦ &nbsp; ✦</div>
+  <p>Made with coffee & with <span>♥</span> by PNCA &nbsp;·&nbsp; <span>© 2026</span> &nbsp;·&nbsp; All rights reserved</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
